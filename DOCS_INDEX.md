@@ -6,8 +6,15 @@ Complete documentation package for generating ArUco markers for laser cutting.
 
 ### Core Files
 - **`generate_aruco_laser.py`** - Main script for generating ArUco markers
+- **`generate_examples.py`** - Script to regenerate all example PDFs
 - **`pyproject.toml`** - UV/pip package configuration
 - **`requirements.txt`** - Python dependencies list
+- **`CITATION.cff`** - Citation file for academic use
+
+### Example Files
+- **`examples/`** - Directory containing all example PDFs
+  - **`examples/README.md`** - Detailed example descriptions
+  - **`examples/*.pdf`** - 10 systematically named example files
 
 ### Documentation Files
 
@@ -40,10 +47,19 @@ Complete documentation package for generating ArUco markers for laser cutting.
    - Tips and troubleshooting
 
 ### Example Outputs
-- **`aruco_3mm_all.pdf`** - All 50 markers from 4X4_50 (3mm size, 2mm spacing, no labels)
-- **`final_demo.pdf`** - Demo with 10 markers (12mm size, 25mm spacing)
-- **`example_5x5_markers.pdf`** - Example using 5X5 dictionary
-- **`example_no_labels.pdf`** - Example without ID labels
+All examples are now organized in the [`examples/`](examples/) directory with systematic naming:
+
+**25 comprehensive examples** covering all parameters:
+- **Standard configurations** (01-02) - With/without labels
+- **Page size variations** (03-04) - A4 and Letter
+- **Marker size variations** (05-07) - 3mm, 15mm, 25mm
+- **Border width variations** (08-10) - 0.5mm, 1mm, 3mm
+- **Spacing variations** (11-13) - 5mm, 20mm, 40mm
+- **Dictionary types** (14-17) - 4×4, 5×5, 6×6, 7×7
+- **Custom grid layouts** (18-21) - Various nrows×ncols configurations
+- **Special use cases** (22-25) - Selected markers, production configs
+
+All examples are dense (many markers per page) and demonstrate practical usage. See [examples/README.md](examples/README.md) for detailed descriptions.
 
 ---
 
@@ -213,7 +229,11 @@ pip install --upgrade opencv-python numpy reportlab
 - [x] Best practices
 - [x] Troubleshooting
 - [x] FAQ
-- [x] Example PDFs
+- [x] Example PDFs (25 comprehensively named examples covering all parameters)
+- [x] Example documentation (examples/README.md)
+- [x] GitHub Pages setup (docs/ directory)
+- [x] Citation file (CITATION.cff)
+- [x] Automated example generation script
 
 ---
 
@@ -223,6 +243,18 @@ pip install --upgrade opencv-python numpy reportlab
 - **Documentation Updated:** 2024
 - **Python Required:** 3.8+
 - **Dependencies:** opencv-python, numpy, reportlab
+- **Examples:** 25 comprehensively organized PDF files
+- **GitHub Pages:** Available (see docs/ directory)
+
+## 🔄 Regenerating Examples
+
+To regenerate all example PDFs with clean, systematic names:
+
+```bash
+python generate_examples.py
+```
+
+This will create all 25 example files in the `examples/` directory, demonstrating all available parameters and use cases.
 
 ---
 

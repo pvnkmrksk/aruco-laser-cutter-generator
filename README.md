@@ -72,28 +72,106 @@ python generate_aruco_laser.py
 
 ## 🖼️ Example Outputs
 
-The repository includes several example PDFs demonstrating different configurations:
+The repository includes **25 comprehensive example PDFs** demonstrating all parameters and use cases. All examples are located in the [`examples/`](examples/) directory.
 
-### Example Files
+### Quick Preview by Category
 
-| File | Description | Command |
-|------|-------------|---------|
-| [`my_first_markers.pdf`](my_first_markers.pdf) | Standard 10mm markers with labels | `uv run generate_aruco_laser.py -r 0 9` |
-| [`aruco_3mm_all.pdf`](aruco_3mm_all.pdf) | Compact 3mm markers, all 50 from 4X4_50 | `uv run generate_aruco_laser.py -s 3 --spacing 2 --no-labels` |
-| [`example_5x5_markers.pdf`](example_5x5_markers.pdf) | 5×5 dictionary markers | `uv run generate_aruco_laser.py --dict 5X5_100 -r 0 20` |
-| [`example_no_labels.pdf`](example_no_labels.pdf) | Clean markers without ID labels | `uv run generate_aruco_laser.py -r 0 15 --no-labels` |
-| [`final_demo.pdf`](final_demo.pdf) | Production-ready example | `uv run generate_aruco_laser.py -r 0 25 -s 12 --spacing 25` |
-| [`all_markers.pdf`](all_markers.pdf) | All 100 markers in single column layout | `uv run generate_aruco_laser.py --dict 4X4_100 --nrows 25 --ncols 1 -s 2.5 --spacing 1 --no-labels` |
+<details>
+<summary><b>Click to view all example categories</b></summary>
 
-> **Note:** Click on any PDF file above to view it directly in GitHub or download it to see the output quality.
+#### Standard Configurations
+- **[01_standard_10mm_with_labels.pdf](examples/01_standard_10mm_with_labels.pdf)** - All 50 markers with ID labels (25 per page)
+- **[02_standard_10mm_no_labels.pdf](examples/02_standard_10mm_no_labels.pdf)** - All 50 markers without labels
 
-### Visual Preview
+#### Page Size Variations
+- **[03_letter_page_size.pdf](examples/03_letter_page_size.pdf)** - Letter page size, 30 markers per page
+- **[04_a4_page_size.pdf](examples/04_a4_page_size.pdf)** - A4 page size, 25 markers per page
 
-The generated PDFs feature:
-- **Clean vector graphics** - No pixelation, perfect for laser cutting
-- **Color-coded layers** - Blue (engraving) and Red (cutting) automatically recognized by laser software
-- **Precise spacing** - Consistent gaps between markers for easy cutting
-- **Optional labels** - Marker IDs can be shown or hidden
+#### Marker Size Variations
+- **[05_compact_3mm_dense.pdf](examples/05_compact_3mm_dense.pdf)** - 3mm markers, maximum density (50 per page)
+- **[06_medium_15mm_standard.pdf](examples/06_medium_15mm_standard.pdf)** - 15mm markers, standard production
+- **[07_large_25mm_high_visibility.pdf](examples/07_large_25mm_high_visibility.pdf)** - 25mm markers, long-range detection
+
+#### Border Width Variations
+- **[08_minimal_border_0.5mm.pdf](examples/08_minimal_border_0.5mm.pdf)** - 0.5mm border, most compact
+- **[09_standard_border_1mm.pdf](examples/09_standard_border_1mm.pdf)** - 1mm border, recommended
+- **[10_thick_border_3mm.pdf](examples/10_thick_border_3mm.pdf)** - 3mm border, high contrast
+
+#### Spacing Variations
+- **[11_tight_spacing_5mm.pdf](examples/11_tight_spacing_5mm.pdf)** - 5mm spacing, maximum density
+- **[12_standard_spacing_20mm.pdf](examples/12_standard_spacing_20mm.pdf)** - 20mm spacing, easy cutting
+- **[13_generous_spacing_40mm.pdf](examples/13_generous_spacing_40mm.pdf)** - 40mm spacing, easy handling
+
+#### Dictionary Types
+- **[14_4x4_dictionary_50_markers.pdf](examples/14_4x4_dictionary_50_markers.pdf)** - 4×4 dictionary, 50 markers
+- **[15_5x5_dictionary_100_markers.pdf](examples/15_5x5_dictionary_100_markers.pdf)** - 5×5 dictionary, 100 markers
+- **[16_6x6_dictionary_250_markers.pdf](examples/16_6x6_dictionary_250_markers.pdf)** - 6×6 dictionary, maximum reliability
+- **[17_7x7_dictionary_sample.pdf](examples/17_7x7_dictionary_sample.pdf)** - 7×7 dictionary, extreme conditions
+
+#### Custom Grid Layouts
+- **[18_custom_grid_5x5.pdf](examples/18_custom_grid_5x5.pdf)** - 5×5 grid layout
+- **[19_custom_grid_4x6.pdf](examples/19_custom_grid_4x6.pdf)** - 4×6 grid layout
+- **[20_custom_grid_10x2.pdf](examples/20_custom_grid_10x2.pdf)** - 10×2 vertical strip
+- **[21_custom_grid_2x10.pdf](examples/21_custom_grid_2x10.pdf)** - 2×10 horizontal strip
+
+#### Special Use Cases
+- **[22_specific_markers_selected.pdf](examples/22_specific_markers_selected.pdf)** - Specific marker IDs selected
+- **[23_single_marker_large.pdf](examples/23_single_marker_large.pdf)** - Single 50mm marker for testing
+- **[24_production_standard.pdf](examples/24_production_standard.pdf)** - Production standard configuration
+- **[25_production_compact.pdf](examples/25_production_compact.pdf)** - Production compact configuration
+
+</details>
+
+### Complete Example Reference
+
+| # | Example | Key Parameters | Use Case |
+|---|---------|----------------|----------|
+| 01 | [standard_10mm_with_labels.pdf](examples/01_standard_10mm_with_labels.pdf) | 10mm, labels, 25/page | Learning, identification |
+| 02 | [standard_10mm_no_labels.pdf](examples/02_standard_10mm_no_labels.pdf) | 10mm, no labels, 25/page | Clean production |
+| 03 | [letter_page_size.pdf](examples/03_letter_page_size.pdf) | Letter page, 30/page | US paper size |
+| 04 | [a4_page_size.pdf](examples/04_a4_page_size.pdf) | A4 page, 25/page | International standard |
+| 05 | [compact_3mm_dense.pdf](examples/05_compact_3mm_dense.pdf) | 3mm, 50/page, dense | Maximum density |
+| 06 | [medium_15mm_standard.pdf](examples/06_medium_15mm_standard.pdf) | 15mm, 16/page | Standard production |
+| 07 | [large_25mm_high_visibility.pdf](examples/07_large_25mm_high_visibility.pdf) | 25mm, 9/page | Long-range detection |
+| 08 | [minimal_border_0.5mm.pdf](examples/08_minimal_border_0.5mm.pdf) | 0.5mm border | Most compact |
+| 09 | [standard_border_1mm.pdf](examples/09_standard_border_1mm.pdf) | 1mm border | Recommended |
+| 10 | [thick_border_3mm.pdf](examples/10_thick_border_3mm.pdf) | 3mm border | High contrast |
+| 11 | [tight_spacing_5mm.pdf](examples/11_tight_spacing_5mm.pdf) | 5mm spacing | Maximum density |
+| 12 | [standard_spacing_20mm.pdf](examples/12_standard_spacing_20mm.pdf) | 20mm spacing | Easy cutting |
+| 13 | [generous_spacing_40mm.pdf](examples/13_generous_spacing_40mm.pdf) | 40mm spacing | Easy handling |
+| 14 | [4x4_dictionary_50_markers.pdf](examples/14_4x4_dictionary_50_markers.pdf) | 4×4 dict, 50 markers | Compact markers |
+| 15 | [5x5_dictionary_100_markers.pdf](examples/15_5x5_dictionary_100_markers.pdf) | 5×5 dict, 100 markers | Better reliability |
+| 16 | [6x6_dictionary_250_markers.pdf](examples/16_6x6_dictionary_250_markers.pdf) | 6×6 dict, 100 shown | Maximum reliability |
+| 17 | [7x7_dictionary_sample.pdf](examples/17_7x7_dictionary_sample.pdf) | 7×7 dict, 25 markers | Extreme conditions |
+| 18 | [custom_grid_5x5.pdf](examples/18_custom_grid_5x5.pdf) | 5×5 grid layout | Square grid |
+| 19 | [custom_grid_4x6.pdf](examples/19_custom_grid_4x6.pdf) | 4×6 grid layout | Wide grid |
+| 20 | [custom_grid_10x2.pdf](examples/20_custom_grid_10x2.pdf) | 10×2 grid layout | Vertical strip |
+| 21 | [custom_grid_2x10.pdf](examples/21_custom_grid_2x10.pdf) | 2×10 grid layout | Horizontal strip |
+| 22 | [specific_markers_selected.pdf](examples/22_specific_markers_selected.pdf) | Selected IDs | Specific markers |
+| 23 | [single_marker_large.pdf](examples/23_single_marker_large.pdf) | Single 50mm marker | Testing/calibration |
+| 24 | [production_standard.pdf](examples/24_production_standard.pdf) | 12mm, 1.5mm border | Production ready |
+| 25 | [production_compact.pdf](examples/25_production_compact.pdf) | 8mm, optimized | Space optimized |
+
+> **💡 Tip:** Click any PDF link above to view it directly in GitHub. All examples demonstrate the clean vector output with color-coded layers (Blue=engraving, Red=cutting).
+
+### Output Features
+
+All generated PDFs include:
+- ✅ **Clean vector graphics** - No pixelation, perfect for laser cutting
+- ✅ **Color-coded layers** - Blue (RGB: 0,0,255) for engraving, Red (RGB: 255,0,0) for cutting
+- ✅ **Precise spacing** - Consistent gaps between markers for easy cutting
+- ✅ **Optional labels** - Marker IDs can be shown or hidden
+- ✅ **Multiple dictionaries** - Support for 4×4, 5×5, 6×6, and 7×7 ArUco dictionaries
+
+### Regenerating Examples
+
+To regenerate all examples with the latest script:
+
+```bash
+python generate_examples.py
+```
+
+This will create all example PDFs in the `examples/` directory with consistent naming.
 
 ---
 
@@ -316,13 +394,28 @@ All dependencies are automatically installed when using `uv run`.
 ```
 aruco-laser-generator/
 ├── generate_aruco_laser.py    # Main script
+├── generate_examples.py       # Script to regenerate all examples
+├── generate_previews.py       # Script to generate preview images (optional)
 ├── requirements.txt            # Dependencies
-├── README.md                   # This file
-├── QUICKSTART.md              # Quick reference
-└── examples/                   # Example outputs
-    ├── aruco_3mm_all50.pdf    # Compact 3mm markers
-    ├── final_demo.pdf          # Standard demo
-    └── example_no_labels.pdf   # No-label example
+├── pyproject.toml             # Package configuration
+├── CITATION.cff               # Citation file for academic use
+│
+├── README.md                   # Project overview (this file)
+├── INSTALL.md                 # Installation guide
+├── QUICKSTART.md              # Quick start guide
+├── USER_GUIDE.md              # Complete user manual
+├── DOCS_INDEX.md              # Documentation index
+│
+├── examples/                   # Example PDFs
+│   ├── README.md              # Example descriptions
+│   ├── 01_standard_10mm_with_labels.pdf
+│   ├── 02_standard_10mm_no_labels.pdf
+│   ├── 03_compact_3mm_all50.pdf
+│   └── ... (10 total examples)
+│
+└── docs/                      # GitHub Pages documentation
+    ├── index.md               # GitHub Pages homepage
+    └── _config.yml            # Jekyll configuration
 ```
 
 ---
@@ -412,7 +505,25 @@ MIT License - Free to use and modify for your projects!
 
 ---
 
-## 🔗 Quick Links
+## 📚 Documentation
+
+Comprehensive documentation is available:
+
+- **[Installation Guide](INSTALL.md)** - Detailed setup instructions
+- **[Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes
+- **[User Guide](USER_GUIDE.md)** - Complete reference manual
+- **[Documentation Index](DOCS_INDEX.md)** - Navigate all documentation
+- **[Examples](examples/)** - View all example outputs
+
+### GitHub Pages
+
+Documentation is also available via GitHub Pages (if enabled):
+- Visit your repository's GitHub Pages URL (e.g., `https://yourusername.github.io/aruco-laser-generator/`)
+- Or view the docs locally in the [`docs/`](docs/) directory
+
+---
+
+## 🔗 External Links
 
 - **uv documentation**: https://docs.astral.sh/uv/
 - **OpenCV ArUco**: https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html
