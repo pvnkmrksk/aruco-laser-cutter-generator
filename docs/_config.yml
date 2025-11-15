@@ -1,26 +1,31 @@
 # GitHub Pages Jekyll Configuration
 title: ArUco Marker Generator for Laser Cutting
 description: Generate clean, optimized ArUco markers for laser cutting and engraving
-theme: jekyll-theme-minimal
-show_downloads: true
-google_analytics: # Add your GA tracking ID if desired
+author: Pavan Kumar Kaushik
 
-# Site settings
+# Use minima theme for professional look
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site settings  
 url: https://pavankaushik.github.io
 baseurl: /aruco-laser-generator
 
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: Installation
-    url: /INSTALL.md
-  - title: Quick Start
-    url: /QUICKSTART.md
-  - title: User Guide
-    url: /USER_GUIDE.md
-  - title: Examples
-    url: /examples/
-  - title: Documentation Index
-    url: /DOCS_INDEX.md
+# Minima theme settings
+minima:
+  skin: auto
+  social_links:
+    github: pavankaushik/aruco-laser-generator
 
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md

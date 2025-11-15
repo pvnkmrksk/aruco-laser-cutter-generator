@@ -1,25 +1,23 @@
 # ArUco Marker Generator for Laser Cutting
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17613883.svg)](https://doi.org/10.5281/zenodo.17613883)
+
 A Python tool for generating clean, optimized ArUco markers specifically designed for laser cutting and engraving with color-coded layers.
 
 **Author:** Pavan Kumar Kaushik
 
 ---
 
-## 🎯 Quick Preview
+## 🎯 Example Outputs
 
-<div align="center">
+The repository includes **25 comprehensive example PDFs** demonstrating all parameters and use cases. View them in the [`examples/`](examples/) directory.
 
-### Example Outputs
-
-| Standard Markers | Compact Layout | Custom Grid |
-|:---:|:---:|:---:|
-| **[Standard 10mm with labels](examples/01_standard_10mm_with_labels.pdf)** | **[Compact 3mm dense](examples/05_compact_3mm_dense.pdf)** | **[Custom 5×5 grid](examples/18_custom_grid_5x5.pdf)** |
-| 25 markers per page | 50 markers per page | Custom layout |
+**Quick examples:**
+- [Standard 10mm markers with labels](examples/01_standard_10mm_with_labels.pdf) - 25 markers per page
+- [Compact 3mm dense layout](examples/05_compact_3mm_dense.pdf) - 50 markers per page
+- [Custom 5×5 grid layout](examples/18_custom_grid_5x5.pdf) - Custom arrangement
 
 *Click links to view PDF examples directly in GitHub*
-
-</div>
 
 ---
 

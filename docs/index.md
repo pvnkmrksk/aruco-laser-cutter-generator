@@ -1,22 +1,22 @@
 ---
 layout: default
-title: ArUco Marker Generator for Laser Cutting
-description: Generate clean, optimized ArUco markers for laser cutting and engraving
+title: Home
+nav_order: 1
 ---
 
 # ArUco Marker Generator for Laser Cutting
 
 <div align="center">
 
-**Generate clean, optimized ArUco markers specifically designed for laser cutting and engraving**
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17613883.svg)](https://doi.org/10.5281/zenodo.17613883)
+
+**Generate clean, optimized ArUco markers specifically designed for laser cutting and engraving**
 
 </div>
 
 ---
 
-## 🎯 Overview
+## Overview
 
 A Python tool that generates ArUco markers optimized for laser cutting with color-coded layers:
 - **Blue (RGB: 0,0,255)** - Engraving layer (filled squares)
@@ -26,7 +26,7 @@ Perfect for use with Lightburn, RDWorks, and other laser cutting software.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### With UV (Recommended)
 
@@ -47,7 +47,18 @@ python generate_aruco_laser.py -r 0 9
 
 ---
 
-## 📚 Documentation
+## Key Features
+
+- ✅ **Clean Vector Output** - Logical grid level generation (no pixelation)
+- ✅ **Color-Coded Layers** - Automatic layer assignment for laser software
+- ✅ **Multiple Dictionaries** - Support for 4×4, 5×5, 6×6, and 7×7 ArUco dictionaries
+- ✅ **Flexible Configuration** - Customize size, spacing, borders, page size, and grid layout
+- ✅ **Batch Generation** - Generate specific IDs, ranges, or entire dictionaries
+- ✅ **Optional Labels** - Toggle marker ID labels on/off
+
+---
+
+## Documentation
 
 ### Getting Started
 - **[Installation Guide](../INSTALL.md)** - Set up the tool on your system
@@ -57,24 +68,10 @@ python generate_aruco_laser.py -r 0 9
 ### Examples & Reference
 - **[Example Outputs](../examples/)** - 25 comprehensive example PDFs
 - **[Documentation Index](../DOCS_INDEX.md)** - Complete documentation map
-- **[Main README](../README.md)** - Project overview and features
 
 ---
 
-## ✨ Key Features
-
-| Feature | Description |
-|---------|-------------|
-| **Clean Vector Output** | Logical grid level generation (no pixelation) |
-| **Color-Coded Layers** | Automatic layer assignment for laser software |
-| **Multiple Dictionaries** | Support for 4×4, 5×5, 6×6, and 7×7 ArUco dictionaries |
-| **Flexible Configuration** | Customize size, spacing, borders, page size, and grid layout |
-| **Batch Generation** | Generate specific IDs, ranges, or entire dictionaries |
-| **Optional Labels** | Toggle marker ID labels on/off |
-
----
-
-## 🎨 Example Outputs
+## Example Outputs
 
 The repository includes **25 comprehensive example PDFs** demonstrating:
 - Different marker sizes (3mm to 50mm)
@@ -88,7 +85,25 @@ View all examples in the [`examples/`](../examples/) directory.
 
 ---
 
-## 📖 Citation
+## Usage Examples
+
+```bash
+# Generate standard 10mm markers
+uv run generate_aruco_laser.py -r 0 9 -s 10
+
+# Generate compact 3mm markers, dense layout
+uv run generate_aruco_laser.py -s 3 --spacing 2 --no-labels
+
+# Custom grid layout
+uv run generate_aruco_laser.py --nrows 5 --ncols 4 -r 0 19
+
+# Different dictionary
+uv run generate_aruco_laser.py --dict 5X5_100 -r 0 20
+```
+
+---
+
+## Citation
 
 **DOI:** [10.5281/zenodo.17613883](https://doi.org/10.5281/zenodo.17613883)
 
@@ -107,25 +122,7 @@ If you use this software in your research, please cite it:
 
 ---
 
-## 🔧 Usage Examples
-
-```bash
-# Generate standard 10mm markers
-uv run generate_aruco_laser.py -r 0 9 -s 10
-
-# Generate compact 3mm markers, dense layout
-uv run generate_aruco_laser.py -s 3 --spacing 2 --no-labels
-
-# Custom grid layout
-uv run generate_aruco_laser.py --nrows 5 --ncols 4 -r 0 19
-
-# Different dictionary
-uv run generate_aruco_laser.py --dict 5X5_100 -r 0 20
-```
-
----
-
-## 📋 Requirements
+## Requirements
 
 - Python 3.8 or higher
 - opencv-python >= 4.8.0
@@ -134,28 +131,14 @@ uv run generate_aruco_laser.py --dict 5X5_100 -r 0 20
 
 ---
 
-## 📄 License
+## License
 
 MIT License - Free to use and modify for your projects!
 
 ---
 
-## 👤 Author
-
-**Pavan Kumar Kaushik**
-
----
-
-## 🔗 Links
+## Links
 
 - **Repository**: [GitHub](https://github.com/pavankaushik/aruco-laser-generator)
 - **DOI**: [10.5281/zenodo.17613883](https://doi.org/10.5281/zenodo.17613883)
 - **OpenCV ArUco**: [Documentation](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)
-
----
-
-<div align="center">
-
-**Need help?** Check the [Documentation Index](../DOCS_INDEX.md) or [User Guide](../USER_GUIDE.md).
-
-</div>

@@ -1,0 +1,52 @@
+/* Custom styles for professional documentation site */
+
+.site-header {
+  border-top: 3px solid #2e7d32;
+}
+
+.site-title {
+  font-weight: 600;
+}
+
+.page-content {
+  padding: 2rem 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+}
+
+/* Code blocks */
+.highlight {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: #2e7d32;
+}
+
+a:hover {
+  color: #1b5e20;
+}
