@@ -46,3 +46,7 @@ examples/previews/
 *.tmp
 *.log
 
+# Release notes (for copy-paste only, not needed in repo)
+RELEASE_NOTES.md
+RELEASE_NOTES_SHORT.md
+

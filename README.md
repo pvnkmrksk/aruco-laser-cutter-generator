@@ -168,7 +168,7 @@ All generated PDFs include:
 To regenerate all examples with the latest script:
 
 ```bash
-python generate_examples.py
+python scripts/generate_examples.py
 ```
 
 This will create all example PDFs in the `examples/` directory with consistent naming.
@@ -394,8 +394,6 @@ All dependencies are automatically installed when using `uv run`.
 ```
 aruco-laser-generator/
 ├── generate_aruco_laser.py    # Main script
-├── generate_examples.py       # Script to regenerate all examples
-├── generate_previews.py       # Script to generate preview images (optional)
 ├── requirements.txt            # Dependencies
 ├── pyproject.toml             # Package configuration
 ├── CITATION.cff               # Citation file for academic use
@@ -405,17 +403,24 @@ aruco-laser-generator/
 ├── QUICKSTART.md              # Quick start guide
 ├── USER_GUIDE.md              # Complete user manual
 ├── DOCS_INDEX.md              # Documentation index
+├── SETUP_GUIDE.md             # Setup guide (GitHub Pages, citations)
+│
+├── scripts/                    # Utility scripts
+│   ├── generate_examples.py   # Regenerate all examples
+│   └── generate_previews.py   # Generate preview images (optional)
 │
 ├── examples/                   # Example PDFs
 │   ├── README.md              # Example descriptions
-│   ├── 01_standard_10mm_with_labels.pdf
-│   ├── 02_standard_10mm_no_labels.pdf
-│   ├── 03_compact_3mm_all50.pdf
-│   └── ... (10 total examples)
+│   └── *.pdf                  # 25 example PDF files
 │
-└── docs/                      # GitHub Pages documentation
-    ├── index.md               # GitHub Pages homepage
-    └── _config.yml            # Jekyll configuration
+├── docs/                      # GitHub Pages documentation
+│   ├── index.md               # GitHub Pages homepage
+│   ├── _config.yml            # Jekyll configuration
+│   └── README.md              # GitHub Pages setup
+│
+└── .github/
+    └── workflows/
+        └── docs.yml           # GitHub Pages deployment workflow
 ```
 
 ---
@@ -481,11 +486,11 @@ https://github.com/pavankaushik/aruco-laser-generator
 A `CITATION.cff` file is included in this repository for automatic citation generation. GitHub and many academic tools can automatically generate citations from this file.
 
 ### Getting a DOI (Optional but Recommended)
-For better discoverability and citation tracking, consider publishing a release to [Zenodo](https://zenodo.org/):
-1. Create a GitHub release
-2. Connect your GitHub repository to Zenodo
-3. Zenodo will automatically assign a DOI to each release
-4. Update the `CITATION.cff` file with your DOI
+For better discoverability and citation tracking, see the **[Setup Guide](SETUP_GUIDE.md#citation-setup)** for detailed step-by-step instructions on:
+- Getting an ORCID ID
+- Setting up Zenodo integration
+- Creating GitHub releases
+- Updating citation files
 
 This makes your work more discoverable in Google Scholar and other academic databases.
 
@@ -513,13 +518,14 @@ Comprehensive documentation is available:
 - **[Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes
 - **[User Guide](USER_GUIDE.md)** - Complete reference manual
 - **[Documentation Index](DOCS_INDEX.md)** - Navigate all documentation
+- **[Setup Guide](SETUP_GUIDE.md)** - GitHub Pages & citation setup (⭐ **New!**)
 - **[Examples](examples/)** - View all example outputs
 
 ### GitHub Pages
 
 Documentation is also available via GitHub Pages (if enabled):
 - Visit your repository's GitHub Pages URL (e.g., `https://yourusername.github.io/aruco-laser-generator/`)
-- Or view the docs locally in the [`docs/`](docs/) directory
+- See [SETUP_GUIDE.md](SETUP_GUIDE.md) for step-by-step setup instructions
 
 ---
 

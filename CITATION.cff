@@ -2,9 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "ArUco Marker Generator for Laser Cutting"
 version: 1.0.0
-date-released: 2024-01-01
-# To add a DOI after publishing to Zenodo, uncomment and update the line below:
-# doi: 10.5281/zenodo.XXXXXXX
+date-released: 2024-11-13
+doi: 10.5281/zenodo.17613883
 authors:
   - family-names: Kaushik
     given-names: Pavan Kumar

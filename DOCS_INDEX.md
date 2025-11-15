@@ -6,15 +6,18 @@ Complete documentation package for generating ArUco markers for laser cutting.
 
 ### Core Files
 - **`generate_aruco_laser.py`** - Main script for generating ArUco markers
-- **`generate_examples.py`** - Script to regenerate all example PDFs
 - **`pyproject.toml`** - UV/pip package configuration
 - **`requirements.txt`** - Python dependencies list
 - **`CITATION.cff`** - Citation file for academic use
 
+### Utility Scripts
+- **`scripts/generate_examples.py`** - Script to regenerate all example PDFs
+- **`scripts/generate_previews.py`** - Script to generate preview images (optional)
+
 ### Example Files
 - **`examples/`** - Directory containing all example PDFs
   - **`examples/README.md`** - Detailed example descriptions
-  - **`examples/*.pdf`** - 10 systematically named example files
+  - **`examples/*.pdf`** - 25 comprehensively named example files
 
 ### Documentation Files
 
@@ -29,6 +32,12 @@ Complete documentation package for generating ArUco markers for laser cutting.
    - Common commands
    - 5-minute getting started
    - Basic examples
+
+3. **[SETUP_GUIDE.md](SETUP_GUIDE.md)** - Repository Setup Guide ⭐ **New!**
+   - GitHub Pages setup (step-by-step)
+   - Citation setup (ORCID, DOI via Zenodo)
+   - Repository organization
+   - Setup checklist
 
 #### Complete Reference
 3. **[USER_GUIDE.md](USER_GUIDE.md)** - Complete User Guide (⭐ Most Comprehensive)
@@ -251,7 +260,7 @@ pip install --upgrade opencv-python numpy reportlab
 To regenerate all example PDFs with clean, systematic names:
 
 ```bash
-python generate_examples.py
+python scripts/generate_examples.py
 ```
 
 This will create all 25 example files in the `examples/` directory, demonstrating all available parameters and use cases.

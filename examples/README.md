@@ -66,7 +66,7 @@ To regenerate all examples with the latest script version:
 
 ```bash
 # From the repository root
-python generate_examples.py
+python scripts/generate_examples.py
 ```
 
 This will recreate all 25 example PDFs with the current script version.
