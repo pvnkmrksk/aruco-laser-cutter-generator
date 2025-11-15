@@ -19,6 +19,10 @@ minima:
   social_links:
     github: pavankaushik/aruco-laser-generator
 
+# Include assets directory
+include:
+  - assets
+
 # Exclude from processing
 exclude:
   - Gemfile

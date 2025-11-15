@@ -1,16 +1,13 @@
 ---
 layout: default
-title: Home
-nav_order: 1
+title: ArUco Marker Generator for Laser Cutting
 ---
 
-# ArUco Marker Generator for Laser Cutting
-
-<div align="center">
+<div style="text-align: center; margin: 2rem 0;">
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17613883.svg)](https://doi.org/10.5281/zenodo.17613883)
 
-**Generate clean, optimized ArUco markers specifically designed for laser cutting and engraving**
+<h2 style="font-weight: 300; color: #666; margin-top: 1rem;">Generate clean, optimized ArUco markers specifically designed for laser cutting and engraving</h2>
 
 </div>
 
@@ -58,6 +55,63 @@ python generate_aruco_laser.py -r 0 9
 
 ---
 
+## Example Outputs
+
+The repository includes **25 comprehensive example PDFs** demonstrating all parameters and use cases.
+
+### Preview
+
+<div style="text-align: center; margin: 2rem 0;">
+
+<table style="margin: 0 auto; border: none; width: 100%; max-width: 900px;">
+<tr style="border: none;">
+<td style="border: none; padding: 15px; text-align: center; vertical-align: top;">
+<a href="../examples/01_standard_10mm_with_labels.pdf">
+<img src="{{ '/assets/previews/01_standard_10mm_with_labels_preview.png' | relative_url }}" width="200" alt="Standard 10mm markers" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+</a><br/>
+<strong style="display: block; margin-top: 10px;">Standard 10mm</strong>
+<small style="color: #666;">With labels</small>
+</td>
+<td style="border: none; padding: 15px; text-align: center; vertical-align: top;">
+<a href="../examples/05_compact_3mm_dense.pdf">
+<img src="{{ '/assets/previews/05_compact_3mm_dense_preview.png' | relative_url }}" width="200" alt="Compact 3mm markers" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+</a><br/>
+<strong style="display: block; margin-top: 10px;">Compact 3mm</strong>
+<small style="color: #666;">Dense layout</small>
+</td>
+<td style="border: none; padding: 15px; text-align: center; vertical-align: top;">
+<a href="../examples/18_custom_grid_5x5.pdf">
+<img src="{{ '/assets/previews/18_custom_grid_5x5_preview.png' | relative_url }}" width="200" alt="Custom grid layout" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+</a><br/>
+<strong style="display: block; margin-top: 10px;">Custom 5×5</strong>
+<small style="color: #666;">Grid layout</small>
+</td>
+<td style="border: none; padding: 15px; text-align: center; vertical-align: top;">
+<a href="../examples/24_production_standard.pdf">
+<img src="{{ '/assets/previews/24_production_standard_preview.png' | relative_url }}" width="200" alt="Production standard" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+</a><br/>
+<strong style="display: block; margin-top: 10px;">Production</strong>
+<small style="color: #666;">12mm standard</small>
+</td>
+</tr>
+</table>
+
+<p style="margin-top: 1.5rem; color: #666; font-style: italic;">Click images to view full PDF examples</p>
+
+</div>
+
+**All examples demonstrate:**
+- Different marker sizes (3mm to 50mm)
+- Various border widths (0.5mm to 3mm)
+- Different spacing options (2mm to 40mm)
+- All dictionary types (4×4, 5×5, 6×6, 7×7)
+- Custom grid layouts
+- Page size variations (A4 and Letter)
+
+View all examples in the [`examples/`](../examples/) directory.
+
+---
+
 ## Documentation
 
 ### Getting Started
@@ -68,20 +122,6 @@ python generate_aruco_laser.py -r 0 9
 ### Examples & Reference
 - **[Example Outputs](../examples/)** - 25 comprehensive example PDFs
 - **[Documentation Index](../DOCS_INDEX.md)** - Complete documentation map
-
----
-
-## Example Outputs
-
-The repository includes **25 comprehensive example PDFs** demonstrating:
-- Different marker sizes (3mm to 50mm)
-- Various border widths (0.5mm to 3mm)
-- Different spacing options (2mm to 40mm)
-- All dictionary types (4×4, 5×5, 6×6, 7×7)
-- Custom grid layouts
-- Page size variations (A4 and Letter)
-
-View all examples in the [`examples/`](../examples/) directory.
 
 ---
 

@@ -12,12 +12,18 @@ A Python tool for generating clean, optimized ArUco markers specifically designe
 
 The repository includes **25 comprehensive example PDFs** demonstrating all parameters and use cases. View them in the [`examples/`](examples/) directory.
 
-**Quick examples:**
-- [Standard 10mm markers with labels](examples/01_standard_10mm_with_labels.pdf) - 25 markers per page
-- [Compact 3mm dense layout](examples/05_compact_3mm_dense.pdf) - 50 markers per page
-- [Custom 5×5 grid layout](examples/18_custom_grid_5x5.pdf) - Custom arrangement
+### Preview
 
-*Click links to view PDF examples directly in GitHub*
+<div align="center">
+
+| Standard Markers | Compact Layout | Custom Grid | Production Ready |
+|:---:|:---:|:---:|:---:|
+| [<img src="assets/previews/01_standard_10mm_with_labels_preview.png" width="200" alt="Standard 10mm markers">](examples/01_standard_10mm_with_labels.pdf) | [<img src="assets/previews/05_compact_3mm_dense_preview.png" width="200" alt="Compact 3mm markers">](examples/05_compact_3mm_dense.pdf) | [<img src="assets/previews/18_custom_grid_5x5_preview.png" width="200" alt="Custom grid layout">](examples/18_custom_grid_5x5.pdf) | [<img src="assets/previews/24_production_standard_preview.png" width="200" alt="Production standard">](examples/24_production_standard.pdf) |
+| **Standard 10mm**<br/>With labels | **Compact 3mm**<br/>Dense layout | **Custom 5×5**<br/>Grid layout | **Production**<br/>12mm standard |
+
+*Click images to view full PDF examples*
+
+</div>
 
 ---
 
