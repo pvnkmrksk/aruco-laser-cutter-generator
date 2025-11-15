@@ -5,6 +5,10 @@ theme: jekyll-theme-minimal
 show_downloads: true
 google_analytics: # Add your GA tracking ID if desired
 
+# Site settings
+url: https://pavankaushik.github.io
+baseurl: /aruco-laser-generator
+
 # Navigation
 navigation:
   - title: Home

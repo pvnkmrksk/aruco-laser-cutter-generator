@@ -42,6 +42,11 @@ Thumbs.db
 !examples/*.pdf
 examples/previews/
 
+# Assets (preview images can be added here)
+assets/previews/*.png
+assets/previews/*.jpg
+!assets/previews/.gitkeep
+
 # Temporary files
 *.tmp
 *.log
